@@ -25,7 +25,7 @@ function sketch(event) {
 }
 
 
-function resize() {
+function resizeGrid() {
     
     let userInput = parseInt(prompt("Enter a new size per side: "));
     if (!userInput) return;
@@ -49,6 +49,6 @@ function resize() {
 
 let inputButton = document.createElement("button");
 inputButton.textContent = "Resize";
-inputButton.addEventListener("click", resize);
+inputButton.addEventListener("click", resizeGrid);
 
 body.append(inputButton);
